@@ -82,7 +82,7 @@ def updateCountryByNamePage():
 	c['capital'] = request.args.get('capital')
 	c['continent'] = request.args.get('continent')
 	return render_template(
-		'country-edit.html',
+		'country.html',
 		c = c)
 
 app.run(host='0.0.0.0', port=5036, debug=True)
